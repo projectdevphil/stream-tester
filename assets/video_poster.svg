@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="mesh-gradient" width="750" height="421.875" viewBox="0 0 750 421.875" > <defs> <filter id="blur" filterUnits="userSpaceOnUse" x="0" y="0" width="750" height="421.875"> <feGaussianBlur stdDeviation="100" /> </filter> <filter id="noise" x="0" y="0" width="100%" height="100%"> <feTurbulence type="fractalNoise" baseFrequency="1" octaves="3" result="turbulence" stitchTiles="stitch" /> <feBlend in="SourceGraphic" in2="turbulence" mode="overlay" /> </filter> </defs> <rect id="background" width="100%" height="100%" fill="#000208" /> <g id="swatches" width="750" height="421.875" filter="url(#blur)"><rect x="-193.7454225732144" y="164.20246145693358" width="463.771408452611" height="574.2070384102059" fill="#0027FF" /><rect x="70.72355087341694" y="159.56486418361462" width="326.3853499377729" height="334.153700145604" fill="#039B93" /><rect x="245.8281129005055" y="271.82785588253955" width="496.74141573439937" height="400.145531125882" fill="#2E00FF" /><rect x="-175.9503795604412" y="-52.82531869127581" width="493.1224082170028" height="517.2571226444402" fill="#00C8B7" /></g> <rect x="0" y="0" width="750" height="421.875" style="mix-blend-mode: overlay; filter: url(#noise); opacity: 100%"></rect> </svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="mesh-gradient" width="750" height="421.875" viewBox="0 0 750 421.875" >
+  <defs>
+    <filter id="blur" filterUnits="userSpaceOnUse" x="0" y="0" width="750" height="421.875">
+      <feGaussianBlur stdDeviation="100" />
+    </filter>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1" octaves="3" result="turbulence" stitchTiles="stitch" />
+      <feBlend in="SourceGraphic" in2="turbulence" mode="overlay" />
+    </filter>
+  </defs>
+  <rect id="background" width="100%" height="100%" fill="#000208" />
+  <g id="swatches" width="750" height="421.875" filter="url(#blur)">
+    <rect x="-193.7454225732144" y="164.20246145693358" width="463.771408452611" height="574.2070384102059" fill="#e87a64" />
+    <rect x="70.72355087341694" y="159.56486418361462" width="326.3853499377729" height="334.153700145604" fill="#e87a64" />
+    <rect x="245.8281129005055" y="271.82785588253955" width="496.74141573439937" height="400.145531125882" fill="#132541" />
+    <rect x="-175.9503795604412" y="-52.82531869127581" width="493.1224082170028" height="517.2571226444402" fill="#00C8B7" />
+  </g>
+  <rect x="0" y="0" width="750" height="421.875" style="mix-blend-mode: overlay; filter: url(#noise); opacity: 100%"></rect>
+</svg>
