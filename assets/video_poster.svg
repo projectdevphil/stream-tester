@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="mesh-gradient" width="750" height="421.875" viewBox="0 0 750 421.875" >
+<svg xmlns="http://www.w3.org/2000/svg" id="mesh-gradient" width="1600" height="900" viewBox="0 0 1600 900" >
   <defs>
-    <filter id="blur" filterUnits="userSpaceOnUse" x="0" y="0" width="750" height="421.875">
+    <filter id="blur" filterUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900">
       <feGaussianBlur stdDeviation="100" />
     </filter>
     <filter id="noise" x="0" y="0" width="100%" height="100%">
@@ -8,12 +8,11 @@
       <feBlend in="SourceGraphic" in2="turbulence" mode="overlay" />
     </filter>
   </defs>
-  <rect id="background" width="100%" height="100%" fill="#000208" />
-  <g id="swatches" width="750" height="421.875" filter="url(#blur)">
-    <rect x="-193.7454225732144" y="164.20246145693358" width="463.771408452611" height="574.2070384102059" fill="#e87a64" />
-    <rect x="70.72355087341694" y="159.56486418361462" width="326.3853499377729" height="334.153700145604" fill="#e87a64" />
-    <rect x="245.8281129005055" y="271.82785588253955" width="496.74141573439937" height="400.145531125882" fill="#132541" />
-    <rect x="-175.9503795604412" y="-52.82531869127581" width="493.1224082170028" height="517.2571226444402" fill="#00C8B7" />
+  <rect id="background" width="100%" height="100%" fill="#132541" />
+  <g id="swatches" width="1600" height="900" filter="url(#blur)">
+    <rect x="579.222766678618" y="71.64643386530508" width="737.0890026246387" height="750.0257220525369" fill="#132541" />
+    <rect x="-323.18890970479913" y="176.0074323017795" width="656.547018367191" height="536.9942063526017" fill="#E87A64" />
+    <rect x="108.2477308335221" y="-121.11815097018693" width="434.4430875820336" height="352.58167273990097" fill="#E87A64" />
   </g>
-  <rect x="0" y="0" width="750" height="421.875" style="mix-blend-mode: overlay; filter: url(#noise); opacity: 100%"></rect>
+  <rect x="0" y="0" width="1600" height="900" style="mix-blend-mode: soft-light; filter: url(#noise); opacity: 90%"></rect>
 </svg>
