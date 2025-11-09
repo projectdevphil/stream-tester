@@ -4,8 +4,8 @@
   --primary-text-color: #e0e0e0;
   --secondary-text-color: #b0b0b0;
   --border-color: transparent;
-  --accent-color: #e87a64;
-  --accent-hover-color: #e87a64;
+  --accent-color: #fff;
+  --accent-hover-color: #fff;
   --input-background: #000;
   --error-color: #800000;
 }
@@ -175,7 +175,7 @@ button {
 }
 
 .input-mode-switcher button.active {
-  color: #fff;
+  color: #000;
 }
 
 .input-mode-switcher::before {
