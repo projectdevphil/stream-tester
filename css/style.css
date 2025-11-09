@@ -149,7 +149,7 @@ button {
   border: none;
   border-radius: 50px;
   background-color: var(--accent-color);
-  color: #fff;
+  color: #000;
   font-weight: 600;
   cursor: pointer;
   outline: none;
