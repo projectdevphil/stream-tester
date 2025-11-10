@@ -1,5 +1,16 @@
 {
-    "Sample_1": {
+    "Sample_1_(HLS)": {
+        "url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8"
+    },
+    "Sample_2_(DASH)": {
+        "url": "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd"
+    },
+    "Sample_3_(DASH_with_ClearKey)": {
+        "url": "https://media.axprod.net/TestVectors/v7-MultiDRM-SingleKey/Manifest_1080p_ClearKey.mpd",
+        "k1": "nrQFDeRLSAKTLifXUIPiZg",
+        "k2": "FmY0xnWCPCNaSpRG-tUuTQ"
+    },
+    "Sample_3_(MP4_compatible_with_HLS)": {
         "url": "https://projectbeeph.github.io/tester/assets/samples/sample_1.mp4"
     }
 }
