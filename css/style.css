@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'Rethink Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   background-color: var(--background-color);
   color: var(--primary-text-color);
   margin: 0;
@@ -38,7 +38,7 @@ p {
 
 button,
 select {
-  font-family: 'Rethink Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 0.8rem;
 }
 
