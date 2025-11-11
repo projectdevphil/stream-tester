@@ -12,5 +12,8 @@
     },
     "Sample_3_(MP4_compatible_with_HLS)": {
         "url": "https://projectbeeph.github.io/tester/assets/samples/sample_1.mp4"
+    },
+    "Charli XCX - Blame It On Your Love feat. Lizzo [Official Video]": {
+        "url": "https://projectbeeph.github.io/tester/assets/samples/sample_2.mp4"
     }
 }
