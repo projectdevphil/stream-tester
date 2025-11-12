@@ -16,6 +16,9 @@
     "Sample_5_(MP4_compatible_with_HLS)": {
         "url": "https://projectdevphil.github.io/stream-tester/assets/samples/sample_3.mp4"
     },
+    "Sample_6_(MP4_compatible_with_HLS)": {
+        "url": "https://projectdevphil.github.io/stream-tester/assets/samples/sample_4.mp4"
+    },
     "Charli XCX - Blame It On Your Love feat. Lizzo [Official Video]": {
         "url": "https://projectdevphil.github.io/stream-tester/assets/samples/sample_2.mp4"
     }
