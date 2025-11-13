@@ -232,8 +232,8 @@ button {
   height: 100%;
 }
 
-.shaka-text-container * {
-    font-family: 'Questrial', sans-serif !important;
+.shaka-text-container {
+    font-family: 'Questrial', sans-serif;
 }
 
 .shaka-overflow-menu,
