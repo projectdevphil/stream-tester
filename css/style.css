@@ -68,8 +68,8 @@ input {
 }
 
 .header a img {
-  height: 20px; 
-  width: auto;
+  height: auto; 
+  width: 35px;
   user-select: none;
    -webkit-tap-highlight-color: transparent;
 }
