@@ -54,17 +54,17 @@ input {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
   margin-bottom: 1.3rem;
-   -webkit-tap-highlight-color: transparent;
 }
 
 .header a {
-  text-decoration: none;
-  color: var(--primary-text-color);
+  text-decoration: none;
+  color: var(--primary-text-color);
+  -webkit-tap-highlight-color: transparent; 
 }
 
 .header a img {
@@ -73,7 +73,6 @@ input {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .grid-container {
