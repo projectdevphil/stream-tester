@@ -54,17 +54,24 @@ input {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin-bottom: 1.3rem;
-   -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 1.3rem;
+   -webkit-tap-highlight-color: transparent;
 }
 
 .header a {
-  text-decoration: none;
-  color: var(--primary-text-color);
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.header a img {
+  max-width: 100%; 
+  height: auto; 
+  height: 40px; 
+  width: auto;
 }
 
 .grid-container {
