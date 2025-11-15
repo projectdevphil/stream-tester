@@ -270,9 +270,8 @@ button {
   font-size: 0.85rem;
 }
 
-/* Floating Menu Styles */
 .floating-menu {
-    position: fixed;
+    position: absolute;
     top: 65px;
     right: 24px;
     background: var(--glass-bg);
@@ -286,7 +285,7 @@ button {
     transform: translateY(-10px);
     visibility: hidden;
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-    width: 220px;
+    width: 180px;
 }
 
 .floating-menu.active {
