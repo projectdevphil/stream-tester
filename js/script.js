@@ -29,6 +29,12 @@ const manualModeContainer = document.getElementById('manual-mode-container');
 const sourceSelector = document.getElementById('sourceSelector');
 const playlistInputs = document.getElementById('playlist-inputs');
 
+// Menu Elements
+const menuToggleBtn = document.getElementById('menu-toggle-btn');
+const menuCloseBtn = document.getElementById('menu-close-btn');
+const sideMenu = document.getElementById('side-menu');
+const menuBackdrop = document.getElementById('menu-backdrop');
+
 function toggleDrmBlockVisibility() {
   const manifestUri = manifestUriInput.value.toLowerCase().trim();
   const isMpd = manifestUri.includes('.mpd');
@@ -340,6 +346,10 @@ function onError(event) {
   showError(`Error Code: ${error.code}\nCategory: ${error.category}`);
 }
 
+function toggleMenu(show) {
+    document.body.classList.toggle('menu-open', show);
+}
+
 function setupEventListeners() {
   uploadM3uButton.addEventListener('click', () => m3uFileInput.click());
   loadPlaylistButton.addEventListener('click', handlePlaylistLoad);
@@ -355,6 +365,13 @@ function setupEventListeners() {
   
   if (sourceSelector) {
     sourceSelector.addEventListener('change', handleSourceChange);
+  }
+
+  // Menu event listeners
+  if (menuToggleBtn && menuCloseBtn && menuBackdrop) {
+      menuToggleBtn.addEventListener('click', () => toggleMenu(true));
+      menuCloseBtn.addEventListener('click', () => toggleMenu(false));
+      menuBackdrop.addEventListener('click', () => toggleMenu(false));
   }
 }
 
