@@ -65,16 +65,12 @@ const renderMenu = () => {
           window.location.href = link.href;
         }
       });
-
       item.addEventListener("contextmenu", event => {
         event.preventDefault();
       });
-
-      item.style.webkitTouchCallout = 'none';
     });
   }
 };
-
 
 function toggleDrmBlockVisibility() {
   const manifestUri = manifestUriInput.value.toLowerCase().trim();
@@ -394,7 +390,7 @@ function toggleMenu() {
     }
 }
 
-function setupEventListeners() {
+function setupPlayerEventListeners() {
   uploadM3uButton.addEventListener('click', () => m3uFileInput.click());
   loadPlaylistButton.addEventListener('click', handlePlaylistLoad);
   loadManualButton.addEventListener('click', () => loadStream());
@@ -411,15 +407,11 @@ function setupEventListeners() {
     sourceSelector.addEventListener('change', handleSourceChange);
   }
 
-  const menuToggleBtn = document.getElementById('menu-toggle-btn');
-  const floatingMenu = document.getElementById('floating-menu');
-
   if (menuToggleBtn && floatingMenu) {
       menuToggleBtn.addEventListener('click', (event) => {
           event.stopPropagation();
           toggleMenu();
       });
-
       window.addEventListener('click', (event) => {
           if (floatingMenu.classList.contains('active') && !floatingMenu.contains(event.target)) {
               toggleMenu();
@@ -428,14 +420,30 @@ function setupEventListeners() {
   }
 }
 
+function setupStaticPageHandlers() {
+    const interactiveElements = document.querySelectorAll(
+        '.back-button, .feedback-link, .social-icon-links a, .developer-section a'
+    );
+
+    if (interactiveElements.length > 0) {
+        interactiveElements.forEach(el => {
+            el.addEventListener('contextmenu', event => event.preventDefault());
+        });
+    }
+}
+
 function main() {
-  setupEventListeners();
-  handleRouting(); 
-  initPlayer();
-  fetchDefaultStreams(); 
-  toggleDrmBlockVisibility(); 
-  updateDrmFieldVisibility();
-  renderMenu();
+  setupStaticPageHandlers();
+
+  if (document.getElementById('video-container')) {
+    setupPlayerEventListeners();
+    handleRouting(); 
+    initPlayer();
+    fetchDefaultStreams(); 
+    toggleDrmBlockVisibility(); 
+    updateDrmFieldVisibility();
+    renderMenu();
+  }
 }
 
 document.addEventListener('DOMContentLoaded', main);
