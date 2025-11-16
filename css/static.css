@@ -18,7 +18,6 @@
   font-size: 1.05rem;
 }
 
-/* --- Back Button Style --- */
 .back-button {
   display: flex;
   align-items: center;
@@ -104,12 +103,11 @@
 
 .social-icon-links {
   display: flex;
-  justify-content: center; /* Centered the icons */
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
-/* --- Social Icon Link Styles --- */
 .social-icon-links a {
   display: flex;
   align-items: center;
@@ -131,16 +129,14 @@
 .social-icon-links a img {
   width: 28px;
   height: 28px;
-  /* User selection is disabled on the parent <a> tag */
 }
 
 .developer-section {
   padding-top: 0;
 }
 
-/* --- Developer Logo Link Styles --- */
 .developer-section a {
-  display: inline-block; /* Added for better interaction */
+  display: inline-block
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -161,7 +157,6 @@
   opacity: 1;
 }
 
-/* --- Feedback Link Styles --- */
 .feedback-link {
   display: inline-block;
   margin-top: 1.5rem;
