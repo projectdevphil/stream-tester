@@ -55,6 +55,7 @@ const renderMenu = () => {
                 <span>Feedback</span>
             </a>
         </li>
+        <li>
             <a href="/litestream">
                 <span class="material-symbols-rounded">sensors</span>
                 <span>Litestream</span>
